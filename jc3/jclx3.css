@@ -1,0 +1,17 @@
+
+
+div#main{overflow: auto;float:center; width:auto;padding: 20px;
+	background-color: #eee;zoom:1;clear: both;border-color: #999;border-style: solid;
+	max-width: 1920px;margin: 20px;}
+
+	div#left{float: left;width: 220px;height:auto;
+		padding: 20px;border-color: #999;border-style: solid;}
+
+	div#center{width: 400px;margin-right: 200px; float: center;
+			padding: 20px;margin-left: 320px;border-color: #999;border-style: solid;
+			}
+
+	div#right{float: right;width: 120px;height:auto;
+				padding: 20px;border-color: #999;border-style: solid;}
+
+	img{height:80px;width: 80px;}
