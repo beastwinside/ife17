@@ -203,29 +203,46 @@ div.main_6{width: 100%;height: 13%;
 background-color: #113E52;position: absolute;
 top:50.6%;}
 
-.main61{width: 66.7%;height: 100%;background-color: #1C3F14;
-	float: left;}
-.main62{width: 33.3%;height: 100%;background-color: #7C4014;
-	float: left;}
 
-	.main61 img{width: 100%;height: 100%;}
+
+.main61{width: 66.7%;height: 100%;background-color: #1C3F14;
+	float: left;background-image:url(61.jpg);color: #FFFFFF;
+	font-size: 50px;text-align: center;
+	 background-size: 100% 100%;opacity: 0.8;}
+
+ .main61 span{font-size: 70px;opacity: 0.7;color: #0C0909;}
+
+ .main61 button{width: 25%;height: 10%;color: #FFFFFF;
+ 	background-color: #1A0303;font-size: 30px;}
+ 	 .main61 button:hover{background-color:  #FFFFFF;color:#1A0303;
+ 	 	cursor: pointer;}
+
+.main62{width: 33.3%;height: 100%;background-color: #7C4014;
+	float: left;overflow: hidden;}
+
+
+
+
 .main62 img{width: 100%;height: 100%;}
+.main62 img:hover{width: 110%;height: 110%;}
 
 
 
 
 /*div6在这里结束*/
 div.main_7{width: 100%;height: 13%;
-background-color: #B1D282;position: absolute;
+position: absolute;background-color: #080707;
 top:63.6%;}
 
 .main71{width: 33.3%;height: 100%;background-color: #43BFB1;
-float: left;}
+float: left;opacity: 0.2;}
+.main71:hover{opacity: 1;cursor: pointer;}
 .main72{width: 33.3%;height: 100%;background-color: #594215;
-float: left;}
+float: left;opacity: 0.2;}
+.main72:hover{opacity: 1;cursor: pointer;}
 .main73{width: 33.3%;height: 100%;background-color: #7891EA;
-float: left;}
-
+float: left;opacity: 0.2;}
+.main73:hover{opacity: 1;cursor: pointer;}
 .main_7 img{width: 100%;height: 100%;}
 
 
@@ -233,13 +250,93 @@ float: left;}
 
 /*div7在这里结束*/
 
-div.main_8{width: 100%;height: 15%;
-background-color: #670505;position: absolute;
+.main_8{width: 100%;height: 15%;
+position: absolute;background-color: #ECEDDC;
 top:76.6%;}
 
+.m8u{height: 33.3%;width: 100%;position: absolute;
+top: 0;text-align: center;font-weight: border;
+font-size: 30px;background-color: #ECEDDC;opacity: 0.7}
+
+.m8u p{height: 33%;width: 40%;position: absolute;
+top: 33%;left: 30%;font-size: 20px;font-weight: bolder;
+}
+
+.m8dl{height: 50%;width: 28%;position: absolute;left: 5%;
+top: 40%;opacity: 0.8;text-indent: 2em;
+background-color: #ECEDDC;}
+
+#more{width: 100%;height: 10%;overflow: hidden;
+	font-family: 宋体;font-weight: bolder;}
+
+	#more:target{height: auto;}
+
+	.buttondown{color:#222222;font-family: 宋体;
+		font-weight: bolder
+	}
+
+.morebutton{width: 30%;height: 10%;background-color: #FA0711;
+border-radius: 15px;color: #FFFFFF;
+}	
+.morebutton:hover{width: 33%;height: 12%;}
+
+
+
+.m8dr{height: 50%;width: 66.7%;position: absolute;right: 0;
+top: 40%;background-color: #3EB54C;}
+
+.m8dr form{width: 100%;height: 100%;background-color: #ECEDDC;
+position: absolute;display: flex;flex-wrap: wrap;
+justify-content: center;}
+
+.type1{width: 35%;height: 8%;background-color: #D8B3B3;
+	margin-left: 5%;margin-right : 5%;border-radius: 15px;
+	color: #FF3E3E;display: flex;align-items: top;padding: 1%;
+	}
+.type2{width: 80%;height: 30%;background-color: #D8B3B3;
+	margin-left: 5%;margin-right : 5%;border-radius: 15px;
+	padding: 1%; display: flex;align-items: top;color: #FF3E3E;}
+
+.type3{width: 80%;height: 13%;background-color: #D8B3B3;
+	margin-left: 5%;margin-right : 5%; border-radius: 15px;
+overflow: hidden;}
+
+.type1 input{background-color: transparent;width: 200px;
+	height: 30px;border-style: none;
+}
+
+.type2 input{background-color: transparent;width: 100%;
+	height: 100%;border-style: none;background-color: transparent;
+	border-radius: 15px;
+}
+
+.type3 input{height: 100%;width: 100%;background: transparent;}
+.type3 input:hover{background-color: #4D7FB4;cursor: pointer;
+}
+
+
+
+/*div8在这里结束*/
+
 div.main_9{width: 100%;height: 7%;
-background-color: #C8B416;position: absolute;
-top:91.6%;}
+background-color: #172134;position: absolute;
+top:91.6%;opacity: 0.95;text-align: center;font-size: 30px;
+color: white;}
+
+.main_9 span{font-size: 15px;}
+.main_9 form{width: 30%;height: 13%;position: absolute;
+top: 50%;left: 35%;border-style: solid;padding: 0;}
+.main_9 form input.l{width: 80%;height: 100%;position: absolute;
+left: 0;padding: 0;margin: 0;border-style: none;}
+.main_9 form input.r{width: 20%;height: 100%;position: absolute;
+right: 0;padding: 0;margin: 0;border-style: none;}
+.main_9 form input.l:focus{background-color: #EEEDCC;}
+.main_9 form input.r:hover{cursor: pointer;background-color:#007009;
+color: white; }
+
+
+
+/*div9在这里结束*/
 
 nav{float:right;font-size: 20px;color:#4D4747;}
 ul.headerul li{display:inline-block ;color: #585B5F;
@@ -247,3 +344,14 @@ font-weight: bolder;}
 
 ul.headerul li.login{color: #EA1414;margin-right: 5px;}
 
+
+/*footer在这里*/
+
+footer{height: 1.5%;width: 100%;position: absolute;
+bottom: 0;background-color: #030719;}
+
+footer div.r{height: 50%;width: 10%;position: absolute;
+right: 0;color: #FFFFFF;bottom: 0;}
+
+footer div.l{height: 50%;width: 10%;position: absolute;
+left: 0;color: #FFFFFF;bottom: 0;margin: 1%;}
