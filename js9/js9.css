@@ -1,0 +1,295 @@
+/*初始化  reset*/  
+body,button,dd,dl,dt,h1,h2,h3,h4,h5,h6,input,li,ol,p,td,ul
+{margin:0;padding:0}  
+body,button,input
+{font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif}  
+h1,h2,h3,h4,h5,h6,button,input{font-size:100%}  
+ol,ul{list-style:none}  
+a{text-decoration:none}  
+a:hover{text-decoration:underline}  
+fieldset,img{border:0;vertical-align:top;}  
+a,button{cursor:pointer;}  
+/*清除浮动*/  
+.clearfix:before,.clearfix:after {  
+    content:"";  
+    display:table;  
+}  
+.clearfix:after{clear:both;}  
+.clearfix{  
+    *zoom:1;/*IE/7/6*/  
+}
+
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+html, body {
+    -webkit-user-select: none;   
+    /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+}
+
+/*初始化css分割线*/
+
+
+html, body {width: 100%;height: 1200px;position: absolute;
+}
+
+
+.container{width: 1200px;height:1200px;position: absolute;
+left: 0;right: 0;margin: auto;background-color: #F0DADA}
+
+header{height: 80px;width: 100%;background-color: rgb(33,137,191);
+position: absolute;top: 0;}
+
+header img{width: 6%;height:80%;margin: 1%;margin-left: 3%; }
+
+header form{background-color: #FFFFFF;width: 30%;height: 50%;
+position: absolute;left: 50%;top: 20%;border-radius: 40px;
+overflow: hidden;}
+
+header form input{width: 100%;height: 100%;}
+header .right{font-size: 18px;
+	height: 50%;width: 7%;color: white;text-align: right;
+	position: absolute;right: 12%;top: 20%;padding: ;}
+
+	.right img{height: 100%;width: 60%;position: absolute;
+		left: 0;margin: 0;}
+
+
+/*header在这里结束*/
+
+
+.side{width: 20%;height:1120px;background-color: #211E1E;
+position: absolute;top: 80px;left: 0;}
+.side1,.side2,.side3{width: 100%;}
+
+.side1{height:15%;position: absolute;font-size: 20px;
+	color: white;text-indent: 4em;
+	background-color: #211E1E;top: 0;}
+
+
+.side1 img{height: 100px;width: 100px;overflow: hidden;
+border-radius: 50px;position: absolute;top:0;left: 0;right:0;
+bottom: 0;margin: auto;opacity: 0.7;}	
+
+.side1 img:hover{height: 150px;width: 150px;cursor: pointer;
+opacity: 1;border-radius: 75px;
+
+transition-property: opacity height width border-radius;
+transition-duration: 1.5s;
+}
+
+.side1 div{width: 15%;height: 98%;background-color:#F60000;
+position: absolute;left: 0;opacity: 0.7;}
+
+.side2{height: 20%;position: absolute;top:15%;
+background-color: #373d4d;font-size: 25px;text-align: center;
+color: white;
+}
+
+.side3{height: 30%;position: absolute;top:35%;
+background-color: #211E1E;}
+
+.side3 div{width: 98%;height: 24%;float: left;font-size: 25px;color: white;
+text-indent: 2em;}
+
+.sdie3 a{text-decoration: none;color:white;}
+
+
+
+
+
+
+
+
+/*side在这里结束*/
+.main{width: 80%;height:1120px;background-color: #371F0F;
+position: absolute;top: 80px;right: 0; }
+
+
+.main .nav{width: 100%;height: 5%;background-color: #1A1515;
+position: absolute;top: 0;}
+
+.nav  ul{font-size: 25px;color: white;margin-left: 90px;}
+.nav ul li{display: inline-block;margin: 10px;}
+.nav a{color: white;text-decoration: none;}
+
+
+
+
+.main .inside{
+	width: 80%;height: 80%;position: absolute;top:5%;
+left: 0;right: 0;margin: auto;}
+select{width: 300px;height: 50px;background-color: black;
+font-size: 20px;color: #FFFFFF;} 
+
+
+.inside .d1{width: 100%;height: 12%;position: absolute;
+top: 0;background-color: #964E4E;box-shadow: 5px 5px 5px #210404;}
+
+
+
+
+
+
+/*d2在这里开始*/
+.inside .d2{width: 100%;height: 12%;position: absolute;
+top: 12%;display: flex;
+justify-content: space-between;align-items: center;}
+.d21,.d22,.d23,.d24,.d25,.d26,.d27,.d28,.d29{box-shadow: 5px 5px 5px #210404;
+ color: black;	font-size: 15px;padding-top: 5px;
+}
+.d21{width: 5%;height: 80%;background-color: #F5F0F0;}
+.d22{width: 10%;height: 80%;background-color: #F8C8C8;}
+.d23{width: 10%;height: 80%;background-color: #F7A8A8;}
+.d24{width: 10%;height: 80%;background-color: #F98383;}
+.d25{width: 10%;height: 80%;background-color: #F85959;}
+.d26{width: 10%;height: 80%;background-color: #F93333;}
+.d27{width: 10%;height: 80%;background-color: #F80F0F;}
+.d28{width: 5%;height: 80%;background-color:#880A0A ;}
+.d29{width: 20%;height: 80%;background-color:#490505 ;color: white;}
+
+.d29 button{width: 50%;height: 40%;background-color: #850000;
+border-radius: 15px;color: white;}
+.d29 button:hover{width: 55%;height: 44%;background-color: #993C3C;
+color: white;}
+.d21:hover{width: 5.5%;height: 88%;cursor: pointer;}
+.d22:hover,.d23:hover,.d24:hover,.d25:hover,
+.d26:hover,.d27:hover{
+	width: 11%;height: 88%;cursor: pointer;
+}
+.d28:hover{width: 5.5%;height: 88%;cursor: pointer;}
+
+
+
+/*d3在这里开始*/
+.inside .d3{width: 100%;height: 12%;position: absolute;
+top: 24%;display: flex;font-size: 20px;color: #F40C23;
+justify-content: space-between;align-items: center;}
+.d31{width:23%;height: 70%;background-color: #D8DDF4;
+border-color: #025211;position: relative;}
+.d32{width:23%;height: 70%;background-color: #666FF3;
+border-color: #E97202;position: relative;}
+.d33{width:23%;height: 70%;background-color: #4325F6;
+border-color: #C70573;position: relative;}
+.d34{width:23%;height: 70%;background-color: #3D02F6;
+border-color: #051C02;position: relative;}
+
+.d31,.d32,.d33,.d34{box-shadow: 5px 5px 5px #210404;
+	border-left-style: solid;}
+
+.d311,.d321,.d331,.d341{width: 40%;
+height: 80%;position: absolute;top: 10%;
+right: 10%;}
+.d311{background-color: #FC9696;}
+.d321{background-color: #FC1616;}
+.d331{background-color: #8C0101;}
+.d341{background-color: #4F0202;}
+
+
+
+/*d4在这里开始*/
+.inside .d4{width: 100%;height: 32%;position: absolute;
+top: 36%;}
+
+.d41{width: 58%;height: 98%;background-color: #3D1F95;
+position: absolute;top: 0;left: 0;border-radius: 10px;
+margin:1%;box-shadow: 5px 5px 5px #210404;}
+
+
+.d41d{width: 100%;height: 90%;position: absolute;
+bottom: 0;background-color: #0F0E0E;display: flex;
+justify-content: space-between;align-content: space-around;
+flex-wrap: wrap;
+}
+
+.d41d div{background-color: #FF6200;
+height:14%;width: 24%;font-size: 20px;font-family: 黑体;
+font-weight: border;text-align: center; }
+.d41d div:hover{cursor: pointer;background-color: black;
+	color: white;
+transition-property: background-color color;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+
+}
+
+.d41u,.d42u{width: 100%;height: 10%;position: absolute;
+top: 0;background-color: #1D1C1C;color: white;
+text-indent: 2em;font-size: 15px;box-shadow: 5px 5px 5px #210404;}
+
+
+.d42{width: 38%;height: 98%;background-color: #F54A0D;
+position: absolute;top: 0;right: 0;border-radius: 10px;
+margin:1%;box-shadow: 5px 5px 5px #210404;}
+
+.d42 form{width: 80%;height: 80%;position: absolute;
+	top: 40px;right: 0;left: 0;margin: auto;font-size: 20px;
+	color: white;box-shadow: 5px 5px 5px #210404;
+	background-color: #048682;border-radius: 15px;
+
+}
+
+input.i1{width: 100%;height: 15%;background-color: #F10229;
+position: absolute;top: 0;border-style: none;color: white;box-shadow: 5px 5px 5px #210404;}
+input.i21{width: 30%;height: 15%;background-color: #090707;
+position: absolute;top: 15%;border-style: none;color: white;box-shadow: 5px 5px 5px #210404;}
+input.i22{width: 70%;height: 15%;background-color: #0C0F01;box-shadow: 5px 5px 5px #210404;
+position: absolute;top: 15%;right: 0%;border-style: none;color: white;}
+input.i3{width: 100%;height: 50%;background-color: #F60019;box-shadow: 5px 5px 5px #210404;
+position: absolute;top: 30%;right: 0%;border-style: none;color: white;}
+input.i41{width: 80%;height: 20%;background-color: #7CE137;box-shadow: 5px 5px 5px #210404;
+position: absolute;top: 80%;border-style: none;color: white;}
+input.i42{width: 20%;height: 20%;background-color: #BF0579;box-shadow: 5px 5px 5px #210404;
+position: absolute;top: 80%;border-style: none;right: 0;color: white;}
+
+input.i42:hover{cursor: pointer;background-color: #756C75;}
+
+
+
+
+
+
+/*d5在这里开始*/
+.inside .d5{width: 100%;height: 32%;position: absolute;
+top: 68%;}
+ .d51{width:37%;height:100%;background-color: #148C20 ;
+position: absolute;left: 0;top: 0;border-radius: 10px;
+margin:1%;overflow: hidden;box-shadow: 5px 5px 5px #210404;}
+
+.d51u{width: 100%;height: 12%;position: absolute;top: 0;
+background-color: #111111;color: #3A3232;
+font-size: 15px;color: white;text-indent: 2em;}
+
+.d51d{width: 100%;height: 88%;position: absolute;bottom: 0;
+background-color: #161413;display: flex;align-items: center;
+justify-content: space-around;flex-wrap: wrap;}
+
+.d51d div{width: 13%;height: 15%;margin-right: 1%;
+background-color: #F20606;color: white;overflow: hidden;}
+.d51d div:hover{background-color: #F6F0F0;cursor: pointer;
+	color: black;
+	
+}
+
+ .d52{width:57%;height:100%;background-color: #054546;
+position: absolute;right: 0;top: 0;border-radius: 10px;
+margin:1%;overflow: hidden;box-shadow: 5px 5px 5px #210404;}
+
+.d52u{width: 100%;height: 12%;position: absolute;top: 0;
+background-color:#1A1818;color: #3A3232;
+font-size: 15px;color: white;text-indent: 2em;
+}
+
+.d52d{width: 80%;height: 80%;position: absolute;top: 15%;
+	left: 0;right: 0;margin: auto;
+background-color: #B20162;
+}
+
+.d52d1{width: 9%;height: 7.5%;background-color: #F2E3E3;
+	float: left;margin: 0.5%;opacity: 0.8;color: #FB0505;}
+.d52d2{width: 15%;height: 7.5%;background-color: #F2E3E3;
+	float: left;margin: 0.5%;opacity: 0.8;}
+.d52d3{width: 65%;height: 7.5%;background-color: #F2E3E3;
+	float: left;margin: 0.5%;opacity: 0.8;}
+.d52d2:hover,.d52d3:hover{background-color:transparent;}
