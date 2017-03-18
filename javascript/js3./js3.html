@@ -85,7 +85,7 @@ sortAqiData(data);
  function sortAqiData(data) {
 
   return data.sort(function compare(value1,value2){
-    return (value2[1]-value1[1]);
+    return (parseInt(value2[1])-parseInt(value1[1]));
 
   }) }
 
