@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h3>污染城市列表</h3>
+	<ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
+</ul>
+
+<script type="text/javascript">
+
+	var aqiData = [
+	["北京", 90],
+	["上海", 70],
+	["福州", 10],
+	["广州", 88],
+	["成都", 90],
+	["西安", 100]
+	];
+
+	(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+
+
+
+
+  var ull=document.getElementById("aqi-list");/*获取输出节点*/
+  var arr=[];/*定义筛选完之后存入的数组*/
+  var l=aqiData.length;
+
+  for(i=0;i<l;i++)
+  	{ if(aqiData[i][1]>60)
+  		{arr.push(aqiData[i]);}
+
+  	}/*把原数组中值大于60的放入自定义的arr数组*/
+
+  	/*冒泡排序*/
+
+  	for(j=0;j<arr.length-1;j++)
+  	{     /*到倒数第二个就可以i再减去已经冒过泡的次数*/
+  		for(x=0;x<arr.length-j-1;x++)
+  		if(arr[x][1]>=arr[x+1][1])
+  			;else {
+  				var t;/*交换量t*/
+  				t=arr[x];
+  				arr[x]=arr[x+1];
+  				arr[x+1]=t;
+  			}
+
+
+
+  		}
+
+
+
+
+
+  		for(i=0;i<arr.length;i++)
+  		{
+  			var li=document.createElement("li");
+  			li.innerHTML="第"+(i+1)+"名"+" "+arr[i];
+  			ull.appendChild(li);
+
+  		}/*操作输出节点，根据arr内容添加li节点*/
+
+
+
+  	})();
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+  <script type="text/javascript">
+
+    var aqiData = [
+    ["北京", 90],
+    ["上海", 75],
+    ["福州", 10],
+    ["广州", 70],
+    ["成都", 80],
+    ["宁波", 88],
+    ["临安", 77],
+    ["西藏", 00],
+    ];
+
+    (function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+
+
+
+
+  var ull=document.getElementById("aqi-list");/*获取输出节点*/
+  var arr=[];/*定义筛选完之后存入的数组*/
+  var l=aqiData.length;
+
+ 
+function shaixuan(ele)
+{ return ele[1]>60;
+
+}
+  
+  var arr=aqiData.filter(shaixuan);
+
+/*把原数组中值大于60的放入自定义的arr数组*/
+
+
+/*sort排序*/
+   function compare(value1,value2)
+   {
+return (value2[1]-value1[1]);
+   } /*比较函数*/
+
+   arr.sort(compare);
+
+
+
+          for(i=0;i<arr.length;i++)
+          {
+            var li=document.createElement("li");
+            li.innerHTML="第"+(i+1)+"名"+" "+arr[i];
+            ull.appendChild(li);
+
+          }/*操作输出节点，根据arr内容添加li节点*/
+
+
+
+        })();
+
+      </script>
+
+    </body>
+    </html>
