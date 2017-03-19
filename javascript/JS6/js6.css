@@ -1,0 +1,22 @@
+body,html{position: relative;}
+
+.line1{height: 250px;width: 100%;
+	background-color: #0F748F;position: relative;}
+
+#line2{height: 200px;width: 100%;
+	background-color: #ff748F;position:absolute;
+display: flex;justify-content: flex-start;
+align-items: center;}
+
+button:hover{background-color: #EC1D1D;color:white;
+cursor: pointer;}
+textarea{height: 200px;width: 200px;}
+
+#line2 div{height: 90%;width: 25%;
+	margin: 10px;position: relative ;cursor: pointer;
+	background-color: white;
+	display: inline-block;order: 4;word-wrap: break-word;}
+
+#line3{height: 30px;width: 100%;
+	background-color: #0F748F;position:absolute;
+top: 460px;}

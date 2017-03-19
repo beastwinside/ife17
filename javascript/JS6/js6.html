@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="js6.css">
+</head>
+<body>
+	<div class="line1">
+		
+		<textarea name="" id="inp"></textarea>
+		<button id="sr" type="button">输入文本</button>
+		
+	</div>
+
+	<div id="line2">
+
+		<div id="xianshi">
+
+		</div>
+	</div>
+
+	<div id="line3">
+		<input id="chaxunsr" type="" name="">
+		<button id="chaxun" type="button">查询关键字</button>
+
+
+	</div>
+
+
+	<script type="text/javascript">
+
+		
+
+		
+
+		var sr=document.getElementById("sr");
+		var cxsr=document.getElementById("chaxunsr");
+		var cxbut=document.getElementById("chaxun");
+
+		/*把输入框内容在输出框显示函数*/
+		function a(){
+			var inpt=document.getElementById("inp");
+			
+			var xian=document.getElementById("xianshi");
+			xian.innerText=inpt.value;
+
+		}
+		/*按钮添加函数*/
+		sr.addEventListener("click",a);
+
+
+		/*查询完内容显示*/
+		function b(){
+			var xs=document.getElementById("xianshi");
+			var conte=xs.innerText;
+			// 内容先获取为文本
+			// alert(conte);
+			var key=document.getElementById('chaxunsr').value;
+			var skey="<span style='color:red;'>"+key+"</span>"
+			conte=conte.replace(new RegExp(key,'g'),skey);
+
+			
+			document.getElementById("xianshi").innerHTML
+			=conte;
+			// alert(document.getElementById("xianshi").innerText);
+			// alert(document.getElementById("xianshi").innerHTML);
+
+
+			
+
+
+		}
+		/*查询按钮添加方法*/
+		cxbut.addEventListener("click",b);
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+	</script>	
+</body>
+</html>
