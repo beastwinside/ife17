@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="js66.css">
+</head>
+<body>
+	<div class="line1">
+		<input  id="inp" type="text" name="">
+		<button id="zsr" type="button">左侧入</button>
+		<button id="ysr" type="button">右侧入</button>
+		<button id="zsc" type="button">左侧出</button>
+		<button id="ysc" type="button">右侧出</button>
+	</div>
+
+	<div id="line2">
+	</div>
+
+	<div id="line3">
+		<input id="cxsr" type="" name="">
+		<button id="cxbt" type="">查询</button>
+	</div>
+
+
+	<script type="text/javascript">
+
+		function clear(){
+			this.parentNode.removeChild(this);
+		}
+
+
+
+		function create(){
+			var val=document.getElementById("inp").value;
+			var div=document.createElement("div");
+			// 测试用div.innerText=Math.floor(Math.random()*10);
+			div.innerText=val;
+			div.addEventListener("click",clear)
+			return div;
+		}
+
+
+		var line=document.getElementById("line2");
+		function fzsr(){
+			var fir=line.firstElementChild;
+			// alert("右边要加了要");
+			line.insertBefore(create(),fir);
+
+		}
+
+
+		function fysr(){
+			// alert("左边要加了要");
+			line.appendChild(create());
+		}
+		
+
+		function fzsc(){
+			var fir=line.firstElementChild;
+			// alert("删第一个了要");
+			alert("删除值为"+fir.innerText)
+			line.removeChild(fir);
+
+		}
+		
+
+		function fysc(){	
+			var las=line.lastElementChild;
+			// alert("删最后一个了要");
+			alert("删除值为"+las.innerText)
+			line.removeChild(las);
+
+		}
+		
+		
+		var zsr=document.getElementById("zsr");
+		var ysr=document.getElementById("ysr");
+		var zsc=document.getElementById("zsc");
+		var ysc=document.getElementById("ysc");
+		var cxbut=document.getElementById("cxbt");
+		zsr.addEventListener("click",fzsr);
+		ysr.addEventListener("click",fysr);
+		zsc.addEventListener("click",fzsc);
+		ysc.addEventListener("click",fysc);
+		cxbut.addEventListener("click",chaxun);
+
+
+		function chaxun(){
+			var line=document.getElementById("line2");
+			var list=line.children;
+			alert(list.length);
+			var key=document.getElementById("cxsr").value;
+
+			for(i=0;i<list.length;i++)
+			    {   var s=list[i].innerText.indexOf(key);
+			          if(s>-1)
+			          	list[i].style.backgroundColor="red";
+			          else 
+			          	list[i].style.backgroundColor="#2D8821";
+
+			    	
+
+                     // if(s!=(-1))
+                     // 	{list[i].style.color="red";}
+
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+		}
+
+
+
+
+
+
+	</script>	
+</body>
+</html>
