@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="js5.css">
+</head>
+<body>
+	<div class="line1">
+		<input  id="inp" type="number" name="" >
+		<button id="zsr" type="button">左侧入</button>
+		<button id="ysr" type="button">右侧入</button>
+		<button id="zsc" type="button">左侧出</button>
+		<button id="ysc" type="button">右侧出</button>
+		<button id="px" type="button">降序</button>
+	</div>
+
+	<div id="line2">
+	</div>
+
+	<script type="text/javascript">
+
+		var js=0;
+		var data=[];
+		function clear(){
+			this.parentNode.removeChild(this);
+		}
+
+
+
+		function create(){
+			var val=document.getElementById("inp").value;
+			
+			var div=document.createElement("div");
+			// val=val/100;
+			div.pxx=val;
+			div.style.height=val+"%";
+			if(val>=10&&val<+90)
+				{   data.push(val);
+
+					div.addEventListener("click",clear);
+					return div;}
+					else {alert("请输入10-90");
+					
+				}
+			}
+
+
+			var line=document.getElementById("line2");
+			/*line获取*/
+
+			function fzsr(){
+				var num=line.children.length;
+				if(num<60)
+				{
+					var fir=line.firstElementChild;
+			// alert("右边要加了要");
+			line.insertBefore(create(),fir);
+			js=js+1;
+		}
+		else alert("超出60个");
+
+
+	}
+
+
+	function fysr(){
+			// alert("左边要加了要");
+			var num=line.children.length;
+			if(num<60)
+			{
+				line.appendChild(create());
+				js=js+1;}
+
+				else alert("超出60个");
+
+
+			}
+
+
+			function fzsc(){
+				var fir=line.firstElementChild;
+			// alert("删第一个了要");
+			alert("删除值为"+fir.pxx)
+			line.removeChild(fir);
+			data.pop();
+			js=js-1;
+
+		}
+		
+
+		function fysc(){	
+			var las=line.lastElementChild;
+			// alert("删最后一个了要");
+			alert("删除值为"+las.pxx)
+			line.removeChild(las);
+			data.shift();
+			js=js-1;
+
+		}
+		
+		
+		var zsr=document.getElementById("zsr");
+		var ysr=document.getElementById("ysr");
+		var zsc=document.getElementById("zsc");
+		var ysc=document.getElementById("ysc");
+		zsr.addEventListener("click",fzsr);
+		ysr.addEventListener("click",fysr);
+		zsc.addEventListener("click",fzsc);
+		ysc.addEventListener("click",fysc);
+
+
+		function compare(a,b)
+		{return a-b;
+
+		}
+
+
+		function sortt(){
+			
+			var x=document.getElementById("line2").children;
+			
+			document.getElementById("line2").innerHTML="";
+			data.sort(compare);
+			var y=document.getElementById("line2");
+			var len=js;
+			
+			for(i=0;i<len;i++)
+			{  
+					val=10;
+
+					var fir=y.firstElementChild;
+					var cc=document.createElement("div");
+					
+			// alert("右边要加了要");
+			y.insertBefore(cc,fir);
+
+cc.pxx=data[i];
+
+			y.firstElementChild.style.height=data[i]+"%";
+
+		}
+	}
+
+
+
+
+
+
+	var px=document.getElementById("px");
+	px.addEventListener("click",sortt);
+
+
+
+
+</script>	
+</body>
+</html>
